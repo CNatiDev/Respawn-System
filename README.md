@@ -1,2 +1,1 @@
 # Respawn System 
-git pull
