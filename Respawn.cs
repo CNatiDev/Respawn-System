@@ -15,4 +15,17 @@ public class Respawn : MonoBehaviour
             ObjToRespawn[i].transform.localRotation = Quaternion.EulerAngles(PointForRespawn[i].transform.localRotation.x, PointForRespawn[i].transform.localRotation.y, PointForRespawn[i].transform.localRotation.z);
         }
     }
+      //The RespawnAllObject function is for respawning all desired objects
+    public void RespawnAllObject()
+    {
+        if (ObjToRespawn.Length != null)
+        {
+            for (int i =0;i<ObjToRespawn.Length;i++)
+            {
+                ObjToRespawn[i].transform.position = PointForRespawn[i].transform.position;
+                ObjToRespawn[i].transform.localRotation = Quaternion.EulerAngles(PointForRespawn[i].transform.localRotation.x, PointForRespawn[i].transform.localRotation.y, PointForRespawn[i].transform.localRotation.z);
+            }
+        }
+    }
+    
 }
